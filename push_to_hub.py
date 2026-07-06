@@ -15,8 +15,7 @@ if __name__ == "__main__":
     config.save_pretrained(serialization_path)
 
     # Push architecture blueprints to your global Hugging Face account
-    # Change 'your-username' to your exact username profile string
-    target_repo = "your-username/lemr-multimodal-clinical-core"
+    target_repo = "misalisu-ai/lemr-multimodal-clinical-core"
     
     print(f"Uploading files to repository space: {target_repo}...")
     model.push_to_hub(target_repo)
